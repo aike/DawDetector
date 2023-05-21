@@ -6,7 +6,7 @@ DAW Detection utility for VST plugin
 
 ## Example
 
-```cpp
+```cpp:YourVSTController.cpp
 #include "DawDetector.h"
 
 // (snip)
