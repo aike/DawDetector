@@ -62,7 +62,7 @@ void DawDetector::initialize(FUnknown* context)
 		noteOffset_ = 0;
 		break;
 	default:
-		noteOffset_ = 12;
+		noteOffset_ = -12;
 		break;
 	}
 }

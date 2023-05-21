@@ -2,7 +2,7 @@ DAW Detector
 ---
 
 ## Description
-DAW Detection utility for VST plugin
+DAW detection utility for VST plugin
 
 ## Example
 
@@ -25,7 +25,7 @@ tresult PLUGIN_API YourVSTController::initialize (FUnknown* context)
     return result;
   }
 
-// (snip)
+  // (snip)
 
   DawDetector::initialize(context); // initialize and detection
 
