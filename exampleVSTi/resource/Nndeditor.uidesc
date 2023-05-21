@@ -1,0 +1,185 @@
+{
+	"vstgui-ui-description": {
+		"version": "1",
+		"bitmaps": {},
+		"fonts": {},
+		"colors": {},
+		"control-tags": {
+			"HostString":   "100",
+			"DawName":      "101",
+			"NoteNameType": "102",
+			"NoteNumber":   "103",
+			"NoteName":     "104"
+		},
+		"templates": {
+			"view": {
+				"attributes": {
+					"background-color": "#444444ff",
+					"background-color-draw-style": "filled and stroked",
+					"class": "CViewContainer",
+                    "name": "view",
+					"origin": "0, 0",
+					"size": "400, 280"
+				},
+				"children": {
+					"CTextLabel": {
+						"attributes": {
+							"class": "CTextLabel",
+                            "title": "Host String",
+							"origin": "20, 23",
+							"size": "100, 20",
+							"back-color": "~ TransparentCColor",
+							"font": "~ NormalFont",
+							"font-antialias": "true",
+							"font-color": "#ffffffff",
+							"text-alignment": "right",
+                            "style-no-frame": "true"
+						}
+					},
+		            "CParamDisplay": {
+						"attributes": {
+							"class": "CParamDisplay",
+                            "control-tag": "HostString",
+                            "origin": "145, 20",
+                            "size": "190, 30",
+                            "font": "~ NormalFont",
+                            "font-antialias": "true",
+                            "back-color": "#333333ff",
+							"font-color": "#ffffffff",
+							"frame-color": "#ddddddff",
+							"frame-width": "1",
+                            "text-alignment": "center",
+                            "style-no-frame": "false"
+						}
+					},
+
+					"CTextLabel": {
+						"attributes": {
+							"class": "CTextLabel",
+                            "title": "DAW Name",
+							"origin": "20, 63",
+							"size": "100, 20",
+							"back-color": "~ TransparentCColor",
+							"font": "~ NormalFont",
+							"font-antialias": "true",
+							"font-color": "#ffffffff",
+							"text-alignment": "right",
+                            "style-no-frame": "true"
+						}
+					},
+		            "CParamDisplay": {
+						"attributes": {
+							"class": "CParamDisplay",
+                            "control-tag": "DawName",
+                            "origin": "145, 60",
+                            "size": "190, 30",
+                            "font": "~ NormalFont",
+                            "font-antialias": "true",
+                            "back-color": "#333333ff",
+							"font-color": "#ffffffff",
+							"frame-color": "#ddddddff",
+							"frame-width": "1",
+                            "text-alignment": "center",
+                            "style-no-frame": "false"
+						}
+					},
+
+					"CTextLabel": {
+						"attributes": {
+							"class": "CTextLabel",
+                            "title": "Note Name Type",
+							"origin": "20, 103",
+							"size": "100, 20",
+							"back-color": "~ TransparentCColor",
+							"font": "~ NormalFont",
+							"font-antialias": "true",
+							"font-color": "#ffffffff",
+							"text-alignment": "right",
+                            "style-no-frame": "true"
+						}
+					},
+		            "CParamDisplay": {
+						"attributes": {
+							"class": "CParamDisplay",
+                            "control-tag": "NoteNameType",
+                            "origin": "145, 100",
+                            "size": "190, 30",
+                            "font": "~ NormalFont",
+                            "font-antialias": "true",
+                            "back-color": "#333333ff",
+							"font-color": "#ffffffff",
+							"frame-color": "#ddddddff",
+							"frame-width": "1",
+                            "text-alignment": "center",
+                            "style-no-frame": "false"
+						}
+					},
+
+					"CTextLabel": {
+						"attributes": {
+							"class": "CTextLabel",
+                            "title": "Note Number",
+							"origin": "20, 153",
+							"size": "100, 20",
+							"back-color": "~ TransparentCColor",
+							"font": "~ NormalFont",
+							"font-antialias": "true",
+							"font-color": "#ffffffff",
+							"text-alignment": "right",
+                            "style-no-frame": "true"
+						}
+					},
+		            "CParamDisplay": {
+						"attributes": {
+							"class": "CParamDisplay",
+                            "control-tag": "NoteNumber",
+                            "origin": "145, 150",
+                            "size": "190, 30",
+                            "font": "~ NormalFont",
+                            "font-antialias": "true",
+                            "back-color": "#333333ff",
+							"font-color": "#ffffffff",
+							"frame-color": "#ddddddff",
+							"frame-width": "1",
+                            "text-alignment": "center",
+                            "style-no-frame": "false"
+						}
+					},
+
+					"CTextLabel": {
+						"attributes": {
+							"class": "CTextLabel",
+                            "title": "Note Name",
+							"origin": "20, 193",
+							"size": "100, 20",
+							"back-color": "~ TransparentCColor",
+							"font": "~ NormalFont",
+							"font-antialias": "true",
+							"font-color": "#ffffffff",
+							"text-alignment": "right",
+                            "style-no-frame": "true"
+						}
+					},
+		            "CParamDisplay": {
+						"attributes": {
+							"class": "CParamDisplay",
+                            "control-tag": "NoteName",
+                            "origin": "145, 190",
+                            "size": "190, 30",
+                            "font": "~ NormalFont",
+                            "font-antialias": "true",
+                            "back-color": "#333333ff",
+							"font-color": "#ffffffff",
+							"frame-color": "#ddddddff",
+							"frame-width": "1",
+                            "text-alignment": "center",
+                            "style-no-frame": "false"
+						}
+					}
+
+
+				}
+			}
+		}
+	}
+}
