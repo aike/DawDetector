@@ -6,7 +6,10 @@ DAW Detection utility for VST plugin
 
 ## Example
 
-```cpp:YourVSTController.cpp
+```cpp
+//
+// YourVSTController.cpp
+//
 #include "DawDetector.h"
 
 // (snip)
@@ -24,11 +27,11 @@ tresult PLUGIN_API YourVSTController::initialize (FUnknown* context)
 
 // (snip)
 
-  DawDetector::initialize(context);
+  DawDetector::initialize(context); // initialize and detection
 
-  DawDetector::getHostString(); // return hostname string
-  DawDetector::getDawName();    // return DAW name
-  DawDetector::getNoteName(60); // return note name of note number 60
+  DawDetector::getHostString();     // return hostname string
+  DawDetector::getDawName();        // return DAW name
+  DawDetector::getNoteName(60);     // return note name of note number 60
 
   switch (DawDetector::getNoteNameType()) {
   case DawDetector::NoteNameType::INTERNATIONAL:
