@@ -33,6 +33,12 @@ tresult PLUGIN_API YourVSTController::initialize (FUnknown* context)
   DawDetector::getDawName();        // return DAW name
   DawDetector::getNoteName(60);     // return note name of note number 60
 
+  // branch by DAW
+  if (DawDetector::getDawId() == DawDetector::DawID::CUBASE) {
+    // special process for Cubase
+  }
+
+  // branch by type
   switch (DawDetector::getNoteNameType()) {
   case DawDetector::NoteNameType::INTERNATIONAL:
     // International type (C4=60)
