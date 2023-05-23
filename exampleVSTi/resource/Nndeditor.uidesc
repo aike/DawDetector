@@ -1,7 +1,11 @@
 {
 	"vstgui-ui-description": {
 		"version": "1",
-		"bitmaps": {},
+		"bitmaps": {
+			"logo": {
+				"path": "logo100.png"
+			}
+        },
 		"fonts": {},
 		"colors": {},
 		"control-tags": {
@@ -19,7 +23,7 @@
 					"class": "CViewContainer",
                     "name": "view",
 					"origin": "0, 0",
-					"size": "400, 280"
+					"size": "500, 250"
 				},
 				"children": {
 					"CTextLabel": {
@@ -174,6 +178,19 @@
 							"frame-width": "1",
                             "text-alignment": "center",
                             "style-no-frame": "false"
+						}
+					},
+
+					"CView": {
+						"attributes": {
+							"bitmap": "logo",
+							"class": "CView",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "370, 156",
+							"size": "100, 64",
+							"transparent": "false",
+							"wants-focus": "false"
 						}
 					}
 

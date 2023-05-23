@@ -18,3 +18,5 @@ exampleVSTi/build/WIN_PDB64/
 exampleVSTi/build/x64/
 exampleVSTi/build/CMakeFiles/
 exampleVSTi/build/VST3/Debug/
+exampleVSTi/build/projectversion.h
+
