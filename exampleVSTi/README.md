@@ -9,5 +9,6 @@ DAW Detector example VSTi
 ![screenshot](ss.png)
 
 ## License
-DAW Detector is licensed under GPLv3 License.  
+NoteNameDemo is licensed under GPLv3 License  
+except for DAW Detector code.  
 Copyright 2023, aike (@aike1000)  
