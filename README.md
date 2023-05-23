@@ -44,10 +44,10 @@ tresult PLUGIN_API YourVSTController::initialize (FUnknown* context)
     // International type (C4=60)
     break;
   case DawDetector::NoteNameType::YAMAHA:
-    // Yamaha type (C4=72)"
+    // Yamaha type (C4=72)
     break;
   case DawDetector::NoteNameType::FLSTUDIO:
-    // FL Studio type (C4=48)"
+    // FL Studio type (C4=48)
     break;
   default:
     // Unknown type (C4=60)
