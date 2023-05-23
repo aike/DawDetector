@@ -58,6 +58,9 @@ tresult PLUGIN_API YourVSTController::initialize (FUnknown* context)
 }
 ```
 
+## Supported DAW
+Cubase, Live, Bitwig Studio, FL Studio, Max, REAPER, Cakewalk by BandLab, ACID
+
 ## License
 DAW Detector is licensed under MIT License.  
 Copyright 2023, aike (@aike1000)  
