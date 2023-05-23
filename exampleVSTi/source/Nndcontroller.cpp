@@ -55,7 +55,12 @@ tresult PLUGIN_API NoteNameDemoController::initialize (FUnknown* context)
 	// 一般的なDAW名の表示
 	dawnameParam->setText(DawDetector::getDawName());
 	dawnameParam->setMaxLength(30);
-	
+
+	// DAW個別処理
+	if (DawDetector::getDawId() == DawDetector::DawID::CUBASE) {
+		// Cubase専用処理
+	}
+
 	// DAWの音名タイプの表示
 	switch (DawDetector::getNoteNameType()) {
 	case DawDetector::NoteNameType::INTERNATIONAL:

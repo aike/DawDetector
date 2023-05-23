@@ -1,4 +1,3 @@
-// MIT License
 #include <tchar.h>
 
 #include "public.sdk/source/vst/vstparameters.h"
@@ -45,7 +44,10 @@ void DawDetector::initialize(FUnknown* context)
 	else if (strcmp16(hostString_, STR("Cakewalk")) == 0) {
 		dawId_ = DawID::CAKEWALK;
 	}
-	else if (strcmp16(hostString_, STR("sfvstisynth")) == 0) {
+	else if (strcmp16(hostString_, STR("sfvstisynth")) == 0) { // ACID VST Instrument
+		dawId_ = DawID::ACID;
+	}
+	else if (strcmp16(hostString_, STR("sfvstwrap")) == 0) {   // ACID VST Fx
 		dawId_ = DawID::ACID;
 	}
 

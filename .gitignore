@@ -1,4 +1,20 @@
-
-# misc
 .DS_Store
+CMakeLists.txt
+CMakeCache.txt
+*.BAK
+*.vcxproj
+*.filters
+*.user
+*.cmake
+*.sln
 
+exampleVSTi/build/.vs/
+exampleVSTi/build/bin/
+exampleVSTi/build/CMakeFilters/
+exampleVSTi/build/lib/
+exampleVSTi/build/NoteNameDemo.dir/
+exampleVSTi/build/vst3sdk/
+exampleVSTi/build/WIN_PDB64/
+exampleVSTi/build/x64/
+exampleVSTi/build/CMakeFiles/
+exampleVSTi/build/VST3/Debug/
