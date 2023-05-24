@@ -34,46 +34,46 @@ tresult PLUGIN_API NoteNameDemoController::initialize (FUnknown* context)
 	}
 
 
-	// パラメータ定義
-	auto* hoststringParam = new TextParameter(STR16("HostName"), kHostStringId);
+	// setup parameters
+	auto* hoststringParam = new TextParameter(STR("HostName"), kHostStringId);
 	parameters.addParameter(hoststringParam);
-	auto* dawnameParam = new TextParameter(STR16("DawName"), kDawNameId);
+	auto* dawnameParam = new TextParameter(STR("DawName"), kDawNameId);
 	parameters.addParameter(dawnameParam);
-	auto* notenametypeParam = new TextParameter(STR16("HostType"), kNoteNameTypeId);
+	auto* notenametypeParam = new TextParameter(STR("HostType"), kNoteNameTypeId);
 	parameters.addParameter(notenametypeParam);
-	auto* notenumberParam = new IntParameter(STR16("NoteNumber"), kNoteNumberId);
+	auto* notenumberParam = new IntParameter(STR("NoteNumber"), kNoteNumberId);
 	parameters.addParameter(notenumberParam);
-	auto* notenameParam = new NoteNameParameter(STR16("NoteName"), kNoteNameId);
+	auto* notenameParam = new NoteNameParameter(STR("NoteName"), kNoteNameId);
 	parameters.addParameter(notenameParam);
 
 	DawDetector::initialize(context);
 	
-	// DAWが返すホスト名の表示
+	// show hostname string
 	hoststringParam->setText(DawDetector::getHostString());
 	hoststringParam->setMaxLength(30);
 	
-	// 一般的なDAW名の表示
+	// show DAW name
 	dawnameParam->setText(DawDetector::getDawName());
 	dawnameParam->setMaxLength(30);
 
-	// DAW個別処理
+	// branch by DAW
 	if (DawDetector::getDawId() == DawDetector::DawID::CUBASE) {
-		// Cubase専用処理
+		// special process for Cubase
 	}
 
-	// DAWの音名タイプの表示
+	// branch by type
 	switch (DawDetector::getNoteNameType()) {
 	case DawDetector::NoteNameType::INTERNATIONAL:
-		notenametypeParam->setText(STR16("International type (C4=60)"));
+		notenametypeParam->setText(STR("International type (C4=60)"));
 		break;
 	case DawDetector::NoteNameType::YAMAHA:
-		notenametypeParam->setText(STR16("Yamaha type (C4=72)"));
+		notenametypeParam->setText(STR("Yamaha type (C4=72)"));
 		break;
 	case DawDetector::NoteNameType::FLSTUDIO:
-		notenametypeParam->setText(STR16("FL Studio type (C4=48)"));
+		notenametypeParam->setText(STR("FL Studio type (C4=48)"));
 		break;
 	default:
-		notenametypeParam->setText(STR16("Unknown type (C4=60)"));
+		notenametypeParam->setText(STR("Unknown type (C4=60)"));
 		break;
 	}
 	notenametypeParam->setMaxLength(30);

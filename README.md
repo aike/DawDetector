@@ -27,11 +27,12 @@ tresult PLUGIN_API YourVSTController::initialize (FUnknown* context)
 
   // (snip)
 
-  DawDetector::initialize(context); // initialize and detection
+  DawDetector::initialize(context);      // initialize and detection
 
-  DawDetector::getHostString();     // return hostname string
-  DawDetector::getDawName();        // return DAW name
-  DawDetector::getNoteName(60);     // return note name of note number 60
+  DawDetector::getHostString();          // return hostname string
+  DawDetector::getDawName();             // return DAW name
+  DawDetector::getNoteName(60);          // return note name of note number 60
+  DawDetector::getNoteNumber(STR("C4")); // return note number of C4
 
   // branch by DAW
   if (DawDetector::getDawId() == DawDetector::DawID::CUBASE) {

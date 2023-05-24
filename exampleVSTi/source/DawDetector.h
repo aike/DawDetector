@@ -30,13 +30,13 @@ public:
 	};
 
 	static void initialize(FUnknown* context);
-	static String128& getHostString(void);
-	static String128& getDawName(void);
+	static TChar* getHostString(void);
+	static TChar* getDawName(void);
 	static DawDetector::DawID getDawId(void);
 	static NoteNameType getNoteNameType(void);
-	static String128& getNoteName(const int notenumber);
-	static int getNoteNumber(const tchar notename);
-	static inline const tchar* dawNames[] = {
+	static TChar* getNoteName(const int notenumber);
+	static int getNoteNumber(const TChar* notename);
+	static inline const TChar* dawNames[] = {
 		STR("Unknown"),
 		STR("VST3 Test Host"),
 		STR("Cubase"),
@@ -65,9 +65,9 @@ public:
 	};
 protected:
 	static DawID dawId_;
-	static String128 hostString_;
-	static String128 dawName_;
-	static String128 noteName_;
+	static TChar hostString_[];
+	static TChar dawName_[];
+	static TChar noteName_[];
 	static NoteNameType noteNameType_;
 	static int noteOffset_;
 };

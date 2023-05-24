@@ -15,10 +15,10 @@ NoteNameParameter::NoteNameParameter(TChar* title, int32 id)
 }
 
 
-// ˆø”normValue‚Í–³‹Aƒƒ“ƒo•Ï”text_‚Ì’l‚ğ•Ô‚·
+// normValue‚ğ®”‰»‚µ‚½•¶š—ñ‚ğ•Ô‚·
 void NoteNameParameter::toString(ParamValue normValue, String128 string) const
 {
-	strncpy16(string, DawDetector::getNoteName((int)(normValue * 1000000.0)), maxLength_);
+	tstrncpy(string, DawDetector::getNoteName((int)(normValue * 1000000.0)), maxLength_);
 	string[maxLength_] = '\0';
 	return;
 }
