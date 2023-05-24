@@ -1,7 +1,7 @@
 
 
 | DAW | Note Name Type | Example | Screen Shot |
-| ------------- | ------------- |
+| --- | -------------- | ------- | ----------- |
 | Cubase  | YAMAHA | C4=72, 60=C3 | [cubase.png](cubase.png) |
 | Live  | YAMAHA | C4=72, 60=C3 | [live.png](live.png) |
 | Bitwig Studio | YAMAHA | C4=72, 60=C3 | [bitwig.png](bitwig.png) |
