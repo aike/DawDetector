@@ -43,6 +43,7 @@ tresult PLUGIN_API NoteNameDemoProcessor::initialize (FUnknown* context)
 	}
 
 	//--- create Audio IO ------
+	addAudioInput(STR16("Stereo In"), Steinberg::Vst::SpeakerArr::kStereo);
 	addAudioOutput (STR16 ("Stereo Out"), Steinberg::Vst::SpeakerArr::kStereo);
 
 	/* If you don't need an event bus, you can remove the next line */
