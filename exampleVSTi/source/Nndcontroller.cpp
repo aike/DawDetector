@@ -12,7 +12,7 @@
 #include "TextParameter.h"
 #include "IntParameter.h"
 #include "NoteNameParameter.h"
-#include "DawDetector.h"
+#include "../../DawDetector.h"
 
 using namespace Steinberg;
 using namespace Vst;

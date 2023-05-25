@@ -1,6 +1,6 @@
 #include "NoteNameParameter.h"
 #include "pluginterfaces/base/ustring.h"
-#include "DawDetector.h"
+#include "../../DawDetector.h"
 
 NoteNameParameter::NoteNameParameter(TChar* title, int32 id)
 {
