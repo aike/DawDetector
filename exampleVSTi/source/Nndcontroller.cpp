@@ -123,6 +123,10 @@ IPlugView* PLUGIN_API NoteNameDemoController::createView (FIDString name)
 	{
 		// create your editor here and return a IPlugView ptr of it
 		auto* view = new VSTGUI::VST3Editor (this, "view", "Nndeditor.uidesc");
+
+		std::vector<double> zooms = { 0.75, 1.0, 1.25, 1.5, 2.0 };
+		view->setAllowedZoomFactors(zooms);
+
 		return view;
 	}
 	return nullptr;
